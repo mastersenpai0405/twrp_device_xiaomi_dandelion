@@ -41,7 +41,8 @@ TARGET_OTA_ASSERT_DEVICE := dandelion
 # Kernel
 BOARD_KERNEL_CMDLINE := \
 	bootopt=64S3,32N2,64N2 \
-	buildvariant=eng
+	androidboot.selinux=permissive
+
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x40078000
